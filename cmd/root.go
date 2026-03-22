@@ -19,6 +19,7 @@ var rootCmd = &cobra.Command{
 
 // Execute is called from main.go to run the CLI
 func Execute() {
+	rootCmd.AddCommand(buildsCmd)
 	if err := rootCmd.Execute(); err != nil {
 		fmt.Println(err)
 		os.Exit(1)
