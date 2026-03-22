@@ -8,9 +8,10 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "gcloud",
-	Short: "A tiny replacement for gcloud",
-	Long:  `gcloud is a minimal CLI that mimics the gcloud command for teaching purposes.`,
+	Version: "Yes this is totally the legitimate gcloud binary :)",
+	Use:     "gcloud",
+	Short:   "A tiny replacement for gcloud",
+	Long:    `gcloud is a minimal CLI that mimics the gcloud command for teaching purposes.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("gcloud: no subcommand provided. See 'gcloud --help'")
 	},
